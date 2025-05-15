@@ -1,1 +1,5 @@
 # godot-mini-video
+
+Work in progress.
+
+This project pioneers the integration of your high-performance, hardware-accelerated H.264 video decoding capabilities directly into the Godot Engine by developing a custom VideoStream type as a C++ Core Module. The primary objective is to enable native, efficient playback of demanding video content, such as 4K at 60fps, by leveraging your existing Vulkan-based decoding pipeline. A key technical strategy to achieve this level of performance within Godot is the implementation of a zero-copy GPU data pathway, utilizing Godot's Texture2DRD resource to ensure that decoded and color-converted video frames remain entirely on the GPU, thus eliminating costly GPU-CPU-GPU transfers. The necessary YUV-to-RGB color space conversion will be performed by a compute shader, initially developed in HLSL and subsequently manually translated to GLSL for compatibility with Godot's RenderingDevice. The development will initially prioritize the Vulkan backend, with a clear roadmap to incorporate Metal as the next target, followed by architectural planning for future DX11 and DX12 support, ensuring broad platform compatibility.
