@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/turanszkij/mini_video.git
+	branch = master
+	commit = 328317754cf2367403931844fe5ee49e00d45279
+	parent = c1b01f9f8469c48f5f997f59f4be887c67b82486
+	method = merge
+	cmdver = 0.4.9
